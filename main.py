@@ -25,7 +25,7 @@ def calculate_accuracy(original_grid, user_grid):
 def main(grid_width, grid_height):
     pygame.init()
     display_info = pygame.display.Info()
-    screen_height = display_info.current_h - 40
+    screen_height = display_info.current_h
     cell_size = screen_height / grid_height  # size of one square
     screen_width = grid_width * cell_size
     screen = pygame.display.set_mode((screen_width, screen_height))
